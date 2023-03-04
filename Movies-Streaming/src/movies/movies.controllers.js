@@ -18,6 +18,8 @@ const findAllMovies = async (limit, offset, search) => {
   if (search) {
     queryOptions.where = {
       title: { [Op.iLike]: `%${search}%` },
+      //like=> Case sentitive => Diferencia entre mayuscula y minusculas
+      //ilike => not case sentitive =>  no genera distincion entre mayuscula y minuscula
     };
   }
 

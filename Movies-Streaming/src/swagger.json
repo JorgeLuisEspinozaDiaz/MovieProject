@@ -1,0 +1,22 @@
+ {
+    "swagger": "2.0",
+    "info": {
+        "title": "Mi api de peliculas clone netflix", 
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/users":{
+            "get": {
+               "responses": {
+                "200":{
+                    "description": "Obtener todos los usuarios"
+                },
+                "400":{
+                    "description": "ocurrio un error al obtener todos los usuarios"
+                }
+                
+               }
+            }
+        }
+    }
+ }
